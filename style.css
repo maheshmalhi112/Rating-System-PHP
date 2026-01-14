@@ -1,0 +1,60 @@
+/* CSS */
+
+.content {
+    border: 0px solid black;
+    border-radius: 3px;
+    padding: 5px;
+    margin: 0 auto;
+    width: 50%;
+}
+
+.post {
+    border-bottom: 1px solid black;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.post h1 {
+    font-weight: normal;
+    font-size: 30px;
+}
+
+.post:last-child {
+    border: 0;
+}
+
+.post a.-link {
+    text-decoration: none;
+    color: black;
+}
+
+.post-text {
+    letter-spacing: 1px;
+    font-size: 15px;
+    font-family: serif;
+    color: aqua; /* You can change this if readability is low */
+    text-align: justify;
+}
+
+.post-action {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.like, .unlike {
+    border: 0;
+    background: none;
+    letter-spacing: 1px;
+    color: lawngreen;
+}
+
+.like:hover, .unlike:hover {
+    cursor: pointer;
+}
+
+@media(max-width:800px) {
+    .content {
+        width: 95%; /* FIXED: was 95px */
+    }
+}
